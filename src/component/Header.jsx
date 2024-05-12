@@ -8,7 +8,7 @@ export function Header(){
       }
 
     return(
-        <div className='flex justify-end sm:text-xl font-semibold dark:bg-gray-400'>
+        <div className='flex justify-end sm:text-xl font-semibold bg-orange-400 dark:bg-gray-400'>
         <ul className="p-2 flex gap-3 text-blue-200 dark:text-white">
              <button onClick={changeDarkMode} className="h-7 w-7 bg-indigo-400 dark:bg-black rounded-md shadow-lg" aria-hidden="true">
                 <ImContrast className='w-full text-white'/>

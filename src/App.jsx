@@ -27,7 +27,7 @@ function App() {
 
   return (
 
-    <div className='bg-orange-400 dark:bg-gray-800 dark:text-white'>
+    <div className='bg-orange-300 dark:bg-gray-800 dark:text-white'>
       <Header/>
       <Routes>
         <Route path="/" element={<Home/>}/>
