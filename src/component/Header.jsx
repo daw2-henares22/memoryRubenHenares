@@ -16,8 +16,6 @@ export function Header(){
                 <li className="dark:hover:text-gray-900 hover:text-indigo-700 hover:scale-x-105 hover:scale-y-105 transition duration-150 underline underline-offset-4 shadow-xl hover:shadow-lg"><Link to="/">Home</Link></li>
                 <li className="dark:hover:text-gray-900 hover:text-indigo-700 hover:scale-x-105 hover:scale-y-105 transition duration-150 underline underline-offset-4 shadow-xl hover:shadow-lg"><Link to="/grupoTarjetasCopy">Pokemons Memory</Link></li>
                 <li className="dark:hover:text-gray-900 hover:text-indigo-700 hover:scale-x-105 hover:scale-y-105 transition duration-150 underline underline-offset-4 shadow-xl hover:shadow-lg"><Link to="/grupoTarjetasCopy">Marvel Memory</Link></li>
-                <li className="dark:hover:text-gray-900 hover:text-indigo-700 hover:scale-x-105 hover:scale-y-105 transition duration-150 underline underline-offset-4 shadow-xl hover:shadow-lg"><Link to="/about">A cerca de</Link></li>
-                <li className="dark:hover:text-gray-900 hover:text-indigo-700 hover:scale-x-105 hover:scale-y-105 transition duration-150 underline underline-offset-4 shadow-xl hover:shadow-lg"><Link to="/context">Context</Link></li>
                 <li className="dark:hover:text-gray-900 hover:text-indigo-700 hover:scale-x-105 hover:scale-y-105 transition duration-150 underline underline-offset-4 shadow-xl hover:shadow-lg"><Link to="/api">Api</Link></li>
         </ul>
         </div>

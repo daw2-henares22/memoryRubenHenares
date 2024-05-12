@@ -3,10 +3,8 @@ import './App.css'
 
 import { Header } from './component/Header'
 import { Home } from './vistas/Home'
-import { About } from './vistas/About'
 import { Juego } from './vistas/Juego'
 import { GrupoTarjetasCopy } from './component/GrupoTarjetasCopy'
-import { Context } from './component/Context'
 import { Api } from './component/API'
 import { SignUp } from './component/SignUp'
 import { Login } from './component/Login'
@@ -33,11 +31,9 @@ function App() {
       <Header/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
         <Route path="/grupoTarjetasCopy" element={<GrupoTarjetasCopy/>}/>
         {token ?<Route path="/api" element={<Api token={token}/>}/>:""}
         <Route path="/juego" element={<Juego/>}/>
-        <Route path="/context" element={<Context/>}/>
         <Route path="/signUp" element={<SignUp/>}/>
         <Route path="/login" element={<Login setToken={setToken}/>}/>
       </Routes>

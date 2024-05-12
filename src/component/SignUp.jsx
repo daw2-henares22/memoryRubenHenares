@@ -102,19 +102,18 @@ export function SignUp(){
               </div>
             </div>
 
-            <div className="flex">
+            <div className="flex text-center">
             <button
                 type="submit"
-                className="flex w-full justify-center rounded-md bg-indigo-600 dark:bg-gray-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 dark:hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="w-full px-3 py-1.5 text-sm font-semibold leading-6 text-white bg-indigo-600 dark:bg-gray-600 rounded-md shadow-sm hover:bg-indigo-500 dark:hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Sign in
               </button>
-              <button
-                type="submit"
-                className="flex w-full justify-center rounded-md bg-indigo-600 dark:bg-gray-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 dark:hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                <Link to="/login">Login</Link>
-              </button>
+              <Link to="/login" className="w-full px-3 py-1.5 text-sm font-semibold leading-6 text-white bg-indigo-600 dark:bg-gray-600 rounded-md shadow-sm hover:bg-indigo-500 dark:hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                <button>
+                  Login
+                </button>
+              </Link>
             </div>
           </form>
         </div>

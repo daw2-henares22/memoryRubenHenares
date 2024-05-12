@@ -26,12 +26,16 @@ export const Login = ({setToken}) =>{
         password: formData.password
       })
 
-      if(error) throw error
-      console.log(data)
+      if(error)
+      throw error
       setToken(data)
       navigate('/api')
     } catch (error) {
-      alert(error)
+      if(error.message.includes(!formData.password)){
+        alert('Wrong password')
+      }else{
+        alert('Wrong email and password')
+      }
     }
   
   }
@@ -85,15 +89,15 @@ export const Login = ({setToken}) =>{
           </div>
         </div>
 
-        <div className="flex">
-        <button
-            className="flex w-full justify-center rounded-md bg-indigo-600 dark:bg-gray-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 dark:hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >
-            <Link to="/signUp">Sign in</Link>
+        <div className="flex text-center">
+        <Link to="/signUp" className="w-full px-3 py-1.5 text-sm font-semibold leading-6 text-white bg-indigo-600 dark:bg-gray-600 rounded-md shadow-sm hover:bg-indigo-500 dark:hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+          <button>
+            Sign in
           </button>
+        </Link>
           <button
             type="submit"
-            className="flex w-full justify-center rounded-md bg-indigo-600 dark:bg-gray-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 dark:hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="w-full px-3 py-1.5 text-sm font-semibold leading-6 text-white bg-indigo-600 dark:bg-gray-600 rounded-md shadow-sm hover:bg-indigo-500 dark:hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Login
           </button>

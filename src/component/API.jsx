@@ -64,6 +64,8 @@ export const Api=({token})=>{
         return tarjetas;
     }
 
+    //Cuando el token sea eliminado se redirige a la página principal
+
     let navigate = useNavigate()
 
     function handleLogout(){
@@ -76,7 +78,7 @@ export const Api=({token})=>{
         <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight">
         Welcome {token.user.user_metadata.name}
       </h2>
-      <button className="flex w-full justify-start rounded-md bg-indigo-600 dark:bg-gray-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 dark:hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" onClick={handleLogout}>Logout</button>
+      <button className="flex justify-start rounded-md bg-indigo-600 dark:bg-gray-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 dark:hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" onClick={handleLogout}>Logout</button>
         <div className="pl-3 grid grid-cols-5 gap-3">
             {tarjetas.map((tarjeta, index) => (// no pongo tarjeta.id porque sino duplico las tarjetas al tener dos copias de la misma con el mismo "id"
                 <Tarjeta
