@@ -80,16 +80,9 @@ export function SignUp(){
             </div>
 
             <div>
-              <div className="flex items-center justify-between">
-                <label htmlFor="password" className="block text-sm font-medium leading-6">
-                  Password
-                </label>
-                <div className="text-sm">
-                  <a href="#" className="font-semibold text-indigo-700 hover:text-indigo-600 dark:text-indigo-400 dark:hover:text-indigo-500">
-                    Forgot password?
-                  </a>
-                </div>
-              </div>
+              <label htmlFor="password" className="block text-sm font-medium leading-6">
+                Password
+              </label>
               <div className="mt-2">
                 <input
                   onChange={handleChange}
