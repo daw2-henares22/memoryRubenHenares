@@ -1,6 +1,8 @@
+import { SignUp } from "../component/SignUp"
+
 export function Home(){
     
     return(
-        <div></div>
+        <SignUp></SignUp>
     )
 }

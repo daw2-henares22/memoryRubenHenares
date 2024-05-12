@@ -30,7 +30,7 @@ export function Tarjetacopy({imagen, nombre}){
     return(
         <>
         <div onClick={tarjetaClick} className=" bg-slate-200 rounded  w-[150px] h-[220px] p-2 shadow-lg text-center">
-            <p>Contador de clics: {contador}</p>
+            <p className="font-bold dark:text-black">Contador de clics: {contador}</p>
             <img className="h-[150px]" src={imagen} alt={nombre} />
             <h2 className="pt-1">{nombre}</h2>
         </div>
